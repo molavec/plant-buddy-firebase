@@ -9,6 +9,9 @@ function App() {
       <ChartBox>
         <NivoLineChartExample/>
       </ChartBox>
+      <ChartBox>
+        <NivoLineChartExample/>
+      </ChartBox>
     </>
   )
 }
