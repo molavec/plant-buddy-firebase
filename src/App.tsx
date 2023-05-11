@@ -1,12 +1,13 @@
 import './App.css'
 import ChartBox from './components/ChartBox'
+import NivoLineChartExample from './components/NivoLineChartExample'
 
 function App() {
   
   return (
     <>
       <ChartBox>
-        El grafico debería ir acá
+        <NivoLineChartExample/>
       </ChartBox>
     </>
   )
