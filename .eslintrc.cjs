@@ -8,7 +8,24 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   plugins: ['react-refresh'],
+  overrides: [
+    {
+      files: [
+        '.eslintrc.cjs',
+        'postcss.config.*',
+        'tailwind.config.*',
+      ],
+      env: {
+        node: true,
+      },
+    },
+  ],
   rules: {
+    indent: ['warn', 2],
+    quotes: ['warn', 'single'],
+    semi: ['warn', 'never'],
     'react-refresh/only-export-components': 'warn',
+    'max-len': ['warn', { 'code': 100 }],
+    'comma-dangle': ['warn', 'always-multiline'],
   },
 }
