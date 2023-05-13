@@ -11,23 +11,25 @@ import data from './data'
 const NivoLineChartExample = () => (
   <ResponsiveLine
     data={data}
-    margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
+    colors={['#66BB6A']}
+    curve='monotoneX'
+    margin={{ top: 5, right: 5, bottom: 45, left: 45 }}
     xScale={{ type: 'point' }}
     yScale={{
       type: 'linear',
       min: 'auto',
       max: 'auto',
-      stacked: true,
+      stacked: false,
       reverse: false,
     }}
-    yFormat=" >-.2f"
+    yFormat=" >-.1f"
     axisTop={null}
     axisRight={null}
     axisBottom={{
       tickSize: 5,
       tickPadding: 5,
       tickRotation: 0,
-      legend: 'transportation',
+      legend: 'Time (Hour day)',
       legendOffset: 36,
       legendPosition: 'middle',
     }}
@@ -35,7 +37,7 @@ const NivoLineChartExample = () => (
       tickSize: 5,
       tickPadding: 5,
       tickRotation: 0,
-      legend: 'count',
+      legend: 'Temperature [˚C]',
       legendOffset: -40,
       legendPosition: 'middle',
     }}
@@ -45,6 +47,8 @@ const NivoLineChartExample = () => (
     pointBorderColor={{ from: 'serieColor' }}
     pointLabelYOffset={-12}
     useMesh={true}
+    enableGridX={false}
+    enableGridY={true}
     legends={[
       {
         anchor: 'bottom-right',
@@ -64,7 +68,7 @@ const NivoLineChartExample = () => (
           {
             on: 'hover',
             style: {
-              itemBackground: 'rgba(0, 0, 0, .03)',
+              itemBackground: 'rgba(255, 255, 255, .03)',
               itemOpacity: 1,
             },
           },
@@ -72,6 +76,6 @@ const NivoLineChartExample = () => (
       },
     ]}
   />
-);
+)
 
 export default NivoLineChartExample
