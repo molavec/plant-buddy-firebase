@@ -1,5 +1,6 @@
 import './App.css'
 import ChartBox from './components/commons/ChartBox'
+import CardContainer from './components/commons/CardContainer'
 import NivoLineChartExample from './components/commons/NivoLineChartExample'
 
 function App() {
@@ -11,12 +12,11 @@ function App() {
         Wellcome to Tailwind CSS
       </div>
       
-      <ChartBox>
-        <NivoLineChartExample/>
-      </ChartBox>
-      <ChartBox>
-        <NivoLineChartExample/>
-      </ChartBox>    
+      <CardContainer>
+        <ChartBox>
+          <NivoLineChartExample/>
+        </ChartBox>    
+      </CardContainer>
       
     </>
   )
