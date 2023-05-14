@@ -1,6 +1,7 @@
 import './App.css'
 import ChartBox from './components/ChartBox'
 import NivoLineChartExample from './components/NivoLineChartExample'
+import EChart from './components/ECharts'
 
 function App() {
   
@@ -12,6 +13,13 @@ function App() {
       <ChartBox>
         <NivoLineChartExample/>
       </ChartBox>
+      <ChartBox>
+        <NivoLineChartExample/>
+      </ChartBox>
+      <ChartBox>
+        <EChart/>
+      </ChartBox>
+      
     </>
   )
 }
