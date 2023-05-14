@@ -1,7 +1,7 @@
 import './App.css'
-import ChartBox from './components/commons/ChartBox'
-import CardContainer from './components/commons/CardContainer'
-import NivoLineChartExample from './components/commons/NivoLineChartExample'
+import ChartBox from './components/ChartBox'
+import CardContainer from './components/CardContainer'
+import NivoLineChartExample from './components/NivoLineChartExample'
 
 function App() {
   

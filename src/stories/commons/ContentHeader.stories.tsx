@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import ContentHeader  from '../../components/commons/ContentHeader'
+import ContentHeader  from '../../components/ContentHeader'
 
 // More on how to set up stories at: 
 // https://storybook.js.org/docs/react/writing-stories/introduction

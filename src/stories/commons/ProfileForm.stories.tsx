@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import ProfileForm  from '../../components/commons/ProfileForm'
+import ProfileForm  from '../../components/ProfileForm'
+import { string } from 'prop-types'
 
 // More on how to set up stories at: 
 // https://storybook.js.org/docs/react/writing-stories/introduction
@@ -18,5 +19,9 @@ type Story = StoryObj<typeof ProfileForm>
 export const Primary: Story = {
   args: {
     nickname: 'WeedLover',
+    email: 'weed@lover.com',
+    name: '',
+    avatarImage: '',
+    headerImage: '',
   },
 }
