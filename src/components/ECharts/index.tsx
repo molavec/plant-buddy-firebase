@@ -13,14 +13,15 @@ const EChart: React.FC<EChartProps> = ({ data }) => {
     const chart = echarts.init(chartRef.current!);
 
     const options = {
+      animationDuration: 5000,
       title: {
-        text: 'Ejemplo de gráfico de ECharts'
+        text: 'Mis plantas'
       },
       tooltip: {
         trigger: 'axis'
       },
       legend: {
-        data: ['Serie 1', 'Serie 2']
+        data: ['Planta 1', 'Planta 2']
       },
       xAxis: {
         type: 'category',
@@ -31,13 +32,13 @@ const EChart: React.FC<EChartProps> = ({ data }) => {
       },
       series: [
         {
-          name: 'Serie 1',
-          data: [10, 20, 30, 40, 50, 60, 77770],
+          name: 'Planta 1',
+          data: [28, 23, 30, 24, 28, 27, 20],
           type: 'line'
         },
         {
-          name: 'Serie 2',
-          data: [70, 60, 50, 40, 30, 20, 1110],
+          name: 'Planta 2',
+          data: [25, 30, 24, 26, 30, 21, 28],
           type: 'line'
         }
       ]
@@ -57,5 +58,11 @@ const EChart: React.FC<EChartProps> = ({ data }) => {
     ></div>
   );
 };
+
+
+
+
+
+
 
 export default EChart;

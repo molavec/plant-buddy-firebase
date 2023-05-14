@@ -8,15 +8,6 @@ function App() {
   return (
     <>
       <ChartBox>
-        <NivoLineChartExample/>
-      </ChartBox>
-      <ChartBox>
-        <NivoLineChartExample/>
-      </ChartBox>
-      <ChartBox>
-        <NivoLineChartExample/>
-      </ChartBox>
-      <ChartBox>
         <EChart/>
       </ChartBox>
       
