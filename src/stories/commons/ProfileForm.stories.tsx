@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
 import ProfileForm  from '../../components/ProfileForm'
-import { string } from 'prop-types'
 
 // More on how to set up stories at: 
 // https://storybook.js.org/docs/react/writing-stories/introduction
