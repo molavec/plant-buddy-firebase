@@ -1,10 +1,15 @@
+import { ReactNode } from 'react'
 import './index.css'
 
-const ChartBox = (props: any) => {
+type Props = {
+  children: ReactNode
+}
+
+const ChartBox = (props: Props) => {
   const { children } = props
   return (
     <div className="chart-box">
-      {children}
+      { children }
     </div>
   )
 }
