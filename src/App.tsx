@@ -12,11 +12,12 @@ function App() {
         <EChartTemp/>
       </ChartBox>
       <ChartBox>
-        <EChartPH/>
-      </ChartBox>
-      <ChartBox>
         <EChartH/>
       </ChartBox>
+      <ChartBox>
+        <EChartPH/>
+      </ChartBox>
+
     </>
   )
 }

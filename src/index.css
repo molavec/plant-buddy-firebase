@@ -67,3 +67,9 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+/* 
+color de cuadro rojo */
+
+.chart-box {
+  border: #d90429 2px solid!important;
+}

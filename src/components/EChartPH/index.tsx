@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react';
-import * as echarts from 'echarts';
-import { chartSeriesData } from './data';
+import React, { useEffect, useRef } from "react";
+import * as echarts from "echarts";
+import { chartSeriesData } from "./data";
 
 interface EChartProps {
   data: any[];
@@ -13,24 +13,49 @@ const EChartPH: React.FC<EChartProps> = ({ data }) => {
     const chart = echarts.init(chartRef.current!);
 
     const options = {
-      animationDuration: 2000,
+      animationDuration: 1000,
       title: {
-        text: 'Variación de PH'
+        text: "Variación de PH",
+      },
+      textStyle: {
+        color: "#2b2d42",
       },
       tooltip: {
-        trigger: 'axis'
+        trigger: "axis",
       },
       legend: {
-        data: ['Planta 1', 'Planta 2']
+        data: ["Planta 1"],
+      },
+      backgroundColor: "#edf2f4",
+      toolbox: {
+        show: true,
+        itemSize: 20,
+        feature: {
+          dataZoom: {
+            yAxisIndex: 'none',
+          },
+          dataView: { readOnly: false },
+          magicType: { type: ['line', 'bar'] },
+          restore: {},
+          saveAsImage: {},
+        },
       },
       xAxis: {
-        type: 'category',
-        data: ['Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo']
+        type: "category",
+        data: [
+          "11:00 AM",
+          "11:15 AM",
+          "11:30 AM",
+          "11:45 AM",
+          "12:00 AM",
+          "12:15 AM",
+          "12:30 AM",
+        ],
       },
       yAxis: {
-        type: 'value'
+        type: "value",
       },
-      series: chartSeriesData
+      series: chartSeriesData,
     };
 
     chart.setOption(options);
@@ -40,12 +65,7 @@ const EChartPH: React.FC<EChartProps> = ({ data }) => {
     };
   }, [data]);
 
-  return (
-    <div
-      ref={chartRef}
-      style={{ width: '100%', height: '500px' }}
-    ></div>
-  );
+  return <div ref={chartRef} style={{ width: "100%", height: "100%" }}></div>;
 };
 
 export default EChartPH;
