@@ -1,21 +1,21 @@
 import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
-// import 'echarts/dist/echarts.css';
+import { chartSeriesData } from './data';
 
 interface EChartProps {
   data: any[];
 }
 
-const EChart: React.FC<EChartProps> = ({ data }) => {
+const EChartPH: React.FC<EChartProps> = ({ data }) => {
   const chartRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const chart = echarts.init(chartRef.current!);
 
     const options = {
-      animationDuration: 5000,
+      animationDuration: 2000,
       title: {
-        text: 'Mis plantas'
+        text: 'Variación de PH'
       },
       tooltip: {
         trigger: 'axis'
@@ -30,18 +30,7 @@ const EChart: React.FC<EChartProps> = ({ data }) => {
       yAxis: {
         type: 'value'
       },
-      series: [
-        {
-          name: 'Planta 1',
-          data: [28, 23, 30, 24, 28, 27, 20],
-          type: 'line'
-        },
-        {
-          name: 'Planta 2',
-          data: [25, 30, 24, 26, 30, 21, 28],
-          type: 'line'
-        }
-      ]
+      series: chartSeriesData
     };
 
     chart.setOption(options);
@@ -59,10 +48,4 @@ const EChart: React.FC<EChartProps> = ({ data }) => {
   );
 };
 
-
-
-
-
-
-
-export default EChart;
+export default EChartPH;

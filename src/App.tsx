@@ -1,16 +1,22 @@
 import './App.css'
 import ChartBox from './components/ChartBox'
-import NivoLineChartExample from './components/NivoLineChartExample'
-import EChart from './components/ECharts'
+import EChartTemp from './components/EChartTemperature'
+import EChartPH from './components/EChartPH'
+import EChartH from './components/EChartHumidity'
 
 function App() {
-  
+
   return (
     <>
       <ChartBox>
-        <EChart/>
+        <EChartTemp/>
       </ChartBox>
-      
+      <ChartBox>
+        <EChartPH/>
+      </ChartBox>
+      <ChartBox>
+        <EChartH/>
+      </ChartBox>
     </>
   )
 }
