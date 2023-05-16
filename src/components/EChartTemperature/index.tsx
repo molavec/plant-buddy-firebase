@@ -12,7 +12,7 @@ const EChartTemp: React.FC = () => {
       const myChart = echarts.init(chartRef.current);
       const option: EChartsOption = {
         title: {
-          text: "Temperatura",
+          text: "AVG Temperature",
         },
         textStyle: {
           color: "#2b2d42",

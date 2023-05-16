@@ -15,7 +15,7 @@ const EChartPH: React.FC<EChartProps> = ({ data }) => {
     const options = {
       animationDuration: 1000,
       title: {
-        text: "Variación de PH",
+        text: "PH Variation",
       },
       textStyle: {
         color: "#2b2d42",

@@ -13,7 +13,7 @@ const EChartH: React.FC<EChartProps> = ({ data }) => {
     const options = {
       animationDuration: 1000,
       title: {
-        text: "Humedad Ambiental",
+        text: "Relative Humidity",
       },
       textStyle: {
         color: "#2b2d42",
@@ -24,7 +24,7 @@ const EChartH: React.FC<EChartProps> = ({ data }) => {
       backgroundColor: "#edf2f4",
       toolbox: {
         show: true,
-        itemSize: 20,
+        itemSize: 15,
         feature: {
           dataZoom: {
             yAxisIndex: "none",
