@@ -15,7 +15,7 @@ function App() {
       <CardContainer>
         <ChartBox>
           <NivoLineChartExample/>
-        </ChartBox>    
+        </ChartBox>
       </CardContainer>
       
     </>

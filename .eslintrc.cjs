@@ -24,11 +24,11 @@ module.exports = {
   rules: {
     indent: ['warn', 2],
     quotes: ['warn', 'single'],
-    semi: ['warn', 'never'],
+    semi: ['warn', 'always'],
     'react-refresh/only-export-components': 'warn',
     'max-len': ['warn', {
       'code': 100,
     }],
     'comma-dangle': ['warn', 'always-multiline'],
   },
-}
+};

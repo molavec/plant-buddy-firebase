@@ -16,5 +16,6 @@ type Story = StoryObj<typeof ContentHeader>
 // More on writing stories with args: 
 // https://storybook.js.org/docs/react/writing-stories/args
 export const Primary: Story = {
-  render: () => <ContentHeader> Título de sección </ContentHeader>,
+  render: () => <ContentHeader> Título de sección  </ContentHeader>,
 }
+
