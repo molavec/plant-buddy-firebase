@@ -72,6 +72,6 @@ const NivoLineChartExample = () => (
       },
     ]}
   />
-)
+);
 
-export default NivoLineChartExample
+export default NivoLineChartExample;
