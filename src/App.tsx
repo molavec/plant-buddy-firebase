@@ -1,40 +1,14 @@
 import './App.css';
-import ChartBox from './components/ChartBox';
-import CardContainer from './components/CardContainer';
-import NivoLineChartExample from './components/NivoLineChartExample';
+import logo from '../public/logo.png';
 
-import EChartTemp from './components/EChartTemperature';
-import EChartPH from './components/EChartPH';
-import EChartH from './components/EChartHumidity';
-import EChartHth from './components/EChartHealth';
-function App() {
+const App = () => {
 
   return (
     <>
-
-      <div className="text-3xl text-rose-600">
-        Wellcome to Tailwind CSS
+      <div className="flex justify-items-center items-center h-screen w-screen  text-3xl text-rose-600">
+          <img src={logo} alt="Plant Buddy Logo" />
+          <p>Loading...</p>
       </div>
-      
-      <CardContainer>
-        <ChartBox>
-          <NivoLineChartExample/>
-        </ChartBox>
-      </CardContainer>
-      
-      <ChartBox>
-        <EChartTemp/>
-      </ChartBox>
-      <ChartBox>
-        <EChartH/>
-      </ChartBox>
-      <ChartBox>
-        <EChartPH/>
-      </ChartBox>
-      <ChartBox>
-        <EChartHth/>
-      </ChartBox>
-
     </>
   );
 }
