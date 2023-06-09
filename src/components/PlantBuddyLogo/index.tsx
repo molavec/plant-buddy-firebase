@@ -1,6 +1,6 @@
-import './index.css'
+import './index.css';
 
-import logo from './logo.png'
+import logo from './logo.png';
 
 type Props = {
   width?: number,
@@ -15,7 +15,7 @@ const CardContainer = (props: Props) => {
       height={props.height}
       width={props.width}
     />
-  )
-}
+  );
+};
 
-export default CardContainer
+export default CardContainer;

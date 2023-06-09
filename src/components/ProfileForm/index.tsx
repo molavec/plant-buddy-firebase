@@ -1,5 +1,5 @@
-import './index.css'
-import ContentHeader from '../ContentHeader'
+import './index.css';
+import ContentHeader from '../ContentHeader';
 
 type Props = {
   nickname?: string,
@@ -163,7 +163,7 @@ const ProfileForm = ({nickname, email, name, avatarImage, headerImage}: Props) =
       
 
     </>
-  )
-}
+  );
+};
 
-export default ProfileForm
+export default ProfileForm;
